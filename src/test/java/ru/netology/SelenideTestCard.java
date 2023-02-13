@@ -33,7 +33,7 @@ public class SelenideTestCard {
         $("[name=\"phone\"]").setValue("+79226099999");
         $("[data-test-id='agreement']").click();
         $("[class=\"button__text\"]").click();
-        $(withText("Успешно!")).shouldBe(visible, Duration.ofSeconds(20));
+        $(withText("Успешно!")).shouldBe(visible, Duration.ofSeconds(15));
         $("[class=\"notification__content\"]")
                 .shouldHave(Condition.text("Встреча успешно забронирована на " + planing), Duration.ofSeconds(15))
                 .shouldBe(visible);
