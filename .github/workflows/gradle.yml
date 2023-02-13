@@ -17,6 +17,6 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Build And Test
-        run: java -jar ./artifacts/app-order.jar &   
+        run: java -jar ./artifacts/app-card-delivery.jar &   
       - name: Gradlew 
         run:  ./gradlew test --info -Dselenide.headless=true
