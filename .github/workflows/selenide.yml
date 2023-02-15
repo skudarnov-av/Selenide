@@ -18,6 +18,6 @@ jobs:
         run: chmod +x gradlew
       - name: Build And Test
         run: java -jar ./artifacts/app-card-delivery.jar &
-      - name: Selennide
+      - name: Selenide
         run:  ./gradlew test --info -Dselenide.headless=true
       
